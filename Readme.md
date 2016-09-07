@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Шпиндлер](https://up.htmlacademy.ru/adaptive/8/user/169617).
-* Наставник: `Неизвестно`.
+* Наставник: Альбина Токарчук.
 
 ---
 
