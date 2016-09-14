@@ -2,11 +2,144 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>HTML Academy: Мишка - Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="logo">
+        <img src="http://placehold.it/95x40" width="95" height="40" alt="Mishka">
+      </a>
+      <nav class="menu">
+        <a class="menu__btn" href="#">Меню</a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main-header">
+        <h1 class="page-title page-title_background_transparent">Милые штуки ручной работы для дома</h1>
+        <ul class="banner-list">
+          <li class="banner-list__item">
+            <a class="banner-list__link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="banner-list__item">
+            <a class="banner-list__link" href="#">Вязаные игрушки</a>
+          </li>
+        </ul>
+      </header>
+      <article class="product-of-week">
+        <h2 class="product-of-week__title">Вязаные корзинки</h2>
+        <h3 class="product-of-week__title product-of-week__title_level_2">Товар недели</h3>
+        <p class="product-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="product-of-week__table">
+          <tr class="product-of-week__parameter">
+            <td class="product-of-week__key">Цвет:</td>
+            <td class="product-of-week__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="product-of-week__parameter">
+            <td class="product-of-week__key">Диаметр:</td>
+            <td class="product-of-week__value">25 см</td>
+          </tr>
+          <tr class="product-of-week__parameter">
+            <td class="product-of-week__key">Высота:</td>
+            <td class="product-of-week__value">15 см</td>
+          </tr>
+        </table>
+        <div class="product-of-week__picture">
+          <img src="http://placehold.it/260x315" width="260" height="315" alt="">
+        </div>
+        <p class="product-of-week__price">Цена: 990 руб.</p>
+        <a class="btn product-of-week__btn" href="#">Заказать</a>
+      </article>
+      <section class="about">
+        <section class="about__us">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <ul class="about__list">
+            <li class="about__item">Экологически чистые материалы</li>
+            <li class="about__item">Скандинавский стиль по российской цене</li>
+            <li class="about__item">Увеличивает лайки на фотографиях</li>
+            <li class="about__item">Связано вручную с любовью и умилением</li>
+            <li class="about__item">Поддержка отечественного производителя</li>
+            <li class="about__item">Поставляется в подарочной упаковке</li>
+          </ul>
+        </section>
+        <section class="reviews about__reviews">
+          <h2 class="reviews__title about__title">Отзывы</h2>
+          <article class="reviews__post">
+            <p class="reviews__text about__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+            <p class="reviews__author-name">Анастасия Красильникова</p>
+            <a class="reviews__author-nickname">@misssssiskras</a>
+            <a class="reviews__arrow reviews__arrow_previous" href="#">Назад</a>
+            <a class="reviews__arrow reviews__arrow_next" href="#">Вперёд</a>
+            <a class="btn reviews__btn" href="#">Написать</a>
+          </article>
+        </section>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__table">
+          <tr class="contacts__parameter">
+            <td class="contacts__key">e-mail:</td>
+            <td class="contacts__value">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr class="contacts__parameter">
+            <td class="contacts__key">Адрес:</td>
+            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class="map"></div>
+        <a class="btn contacts__btn" href="#">Напишите нам</a>
+      </section>
+      <div class="modal-window modal-window_add-to-cart">
+        <h4 class="modal-window__title">Добавить в корзину</h4>
+        <p class="modal-window__text">Выберите размер:</p>
+        <label class="modal-window__label">
+          S
+          <input type="radio" name="size" value="S">
+        </label>
+        <label class="modal-window__label">
+          M
+          <input type="radio" name="size" value="M">
+        </label>
+        <label class="modal-window__label">
+          L
+          <input type="radio" name="size" value="L">
+        </label>
+        <a class="btn modal-window__btn" href="#">Добавить</a>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <ul class="social">
+        <li class="social__item social__item_instagram">
+          <a class="social__link" href="#">Instagram</a>
+        </li>
+        <li class="social__item social__item_facebook">
+          <a class="social__link" href="#">Facebook</a>
+        </li>
+        <li class="social__item social__item_twitter">
+          <a class="social__link" href="#">Twitter</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__logo" href="http://htmlacademy.ru/">
+          <img src="http://placehold.it/30x40" width="30" height="40" alt="Htmlacademy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
