@@ -1,7 +1,7 @@
-@import "global/global.css";
+@import "global/normalize.css";
 @import "global/variables.css";
 @import "global/mixins.css";
-@import "global/normalize.css";
+@import "global/global.css";
 
 @import "page-header.css";
 @import "logo.css";
