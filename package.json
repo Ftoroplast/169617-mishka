@@ -13,13 +13,13 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/169617-mishka",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-watch": "1.0.0",
     "grunt-postcss": "0.8.0",
-    "@htmlacademy/editorconfig-cli": "0.0.7",
-    "precss": "1.4.0"
+    "precss": "^1.4.0"
   },
   "scripts": {
     "test": "editorconfig-cli",

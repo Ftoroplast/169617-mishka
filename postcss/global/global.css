@@ -1,0 +1,4 @@
+body {
+  background-color: $default-bg-color;
+  color: $default-font-color;
+}

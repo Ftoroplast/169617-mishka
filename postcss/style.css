@@ -1,0 +1,25 @@
+@import "global/global.css";
+@import "global/variables.css";
+@import "global/mixins.css";
+@import "global/normalize.css";
+
+@import "page-header.css";
+@import "logo.css";
+@import "menu.css";
+@import "main-header.css";
+@import "page-title.css";
+@import "banner-list.css";
+@import "product-of-week.css";
+@import "about.css";
+@import "reviews.css";
+@import "btn.css";
+@import "contacts.css";
+@import "map.css";
+@import "modal-window.css";
+@import "page-footer.css";
+@import "social.css";
+@import "copyright.css";
+@import "products.css";
+@import "product.css";
+@import "production-process.css";
+@import "form.css";

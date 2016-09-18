@@ -1,0 +1,15 @@
+.contacts {
+  padding: 35px 0;
+}
+
+.contacts__title {
+  @mixin font 700, 18px, 30px;
+}
+
+.contacts__link {
+  @mixin font 400, 15px, 30px, #444444;
+}
+
+.contacts__table {
+  @mixin font 400, 15px, 30px, #444444;
+}

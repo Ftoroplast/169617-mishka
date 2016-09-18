@@ -1,0 +1,3 @@
+.copyright__text {
+  @mixin font 700, 19px, 18px;
+}

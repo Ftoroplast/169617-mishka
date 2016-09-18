@@ -1,0 +1,15 @@
+.about {
+  padding: 35px 0 50px 0;
+}
+
+.about__title {
+  @mixin font 700, 25px, 30px;
+}
+
+.about__item {
+  @mixin font 700, 17px, 24px;
+}
+
+.about__text {
+  @mixin font 400, 15px, 30px, #444444;
+}

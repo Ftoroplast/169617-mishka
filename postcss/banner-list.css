@@ -1,0 +1,11 @@
+.banner-list__link {
+  @mixin font 700, 19px, 24px, #ffffff;
+
+  &:nth-of-type(odd) {
+    background-color: #63d1bb;
+  }
+
+  &:nth-of-type(2n) {
+    background-color: #56c3b2;
+  }
+}

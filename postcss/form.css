@@ -1,0 +1,16 @@
+.form {
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.form__text {
+  @mixin font 400, 13px, 24px, #444444;
+}
+
+.form__legend {
+  @mixin font 700, 17px, 16px, #63d1bb;
+}
+
+.form__label {
+  @mixin font 700, 17px, 18px;
+}

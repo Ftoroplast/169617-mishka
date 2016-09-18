@@ -1,0 +1,7 @@
+.reviews__author-name {
+  @mixin font 700, 18px, 24px;
+}
+
+.reviews__author-nickname {
+  @mixin font 400, 18px, 30px, #444444;
+}
