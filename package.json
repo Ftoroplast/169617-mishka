@@ -16,14 +16,14 @@
     "autoprefixer": "6.4.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-less": "1.4.0",
     "grunt-contrib-watch": "1.0.0",
     "grunt-postcss": "0.8.0",
-    "@htmlacademy/editorconfig-cli": "0.0.7"
+    "@htmlacademy/editorconfig-cli": "0.0.7",
+    "precss": "1.4.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt postcss",
     "start": "npm run build && grunt serve"
   },
   "editorconfig-cli": [
@@ -32,7 +32,7 @@
     "*.js",
     "js/**/*.js",
     "img/**/*.svg",
-    "less/**/*.less"
+    "postcss/**/*.{css,pcss}"
   ],
   "engines": {
     "node": "6.5"
