@@ -1,0 +1,16 @@
+.modal-window__title {
+  @mixin font 700, 25px, 30px;
+}
+
+.modal-window__text {
+  @mixin font 400, 15px 30px, #444444;
+}
+
+.modal-window__label {
+  @mixin font 700, 17px, 16px, #444444;
+}
+
+.modal-window__btn {
+  background-color: #63d1bb;
+  color: #ffffff;
+}

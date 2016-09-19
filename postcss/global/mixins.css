@@ -1,0 +1,8 @@
+@define-mixin font $weight, $size, $height, $color: $default-font-color {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  color: $color;
+}

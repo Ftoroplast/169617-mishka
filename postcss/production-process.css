@@ -1,0 +1,13 @@
+.production-process {
+  padding-top: 27px;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.production-process__title {
+  @mixin font 700, 17px, 24px;
+}
+
+.production-process__text {
+  @mixin font 400, 13px, 24px;
+}

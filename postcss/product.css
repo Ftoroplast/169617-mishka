@@ -1,0 +1,15 @@
+.product {
+  margin-bottom: 30px;
+}
+
+.product__title {
+  @mixin font 700, 17px, 24px;
+}
+
+.product__parameters {
+  @mixin font 400, 13px, 30px, #444444;
+}
+
+.product__price {
+  @mixin font 700, 15px, 24px;
+}

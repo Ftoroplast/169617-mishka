@@ -1,0 +1,21 @@
+.product-of-week {
+  padding: 35px 0 50px 0;
+
+  @mixin font 400, 15px, 24px;
+
+  background-color: #ffffff;
+}
+
+.product-of-week__title {
+  @mixin font 700, 25px, 30px;
+
+  &::after {
+    content: "Товар недели";
+
+    @mixin font 700, 17px, 16px, #63d1bb;
+  }
+}
+
+.product-of-week__price {
+  @mixin font 700, 17px, 24px, #444444;
+}
