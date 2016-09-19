@@ -7,11 +7,11 @@
 }
 
 .product-of-week__title {
-  @mixin font 700, 25px, 30px;
+  &_level_1 {
+    @mixin font 700, 25px, 30px;
+  }
 
-  &::after {
-    content: "Товар недели";
-
+  &_level_2 {
     @mixin font 700, 17px, 16px, #63d1bb;
   }
 }
