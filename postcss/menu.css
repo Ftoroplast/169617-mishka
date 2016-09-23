@@ -1,3 +1,71 @@
+.menu__btn {
+   position: relative;
+
+   display: block;
+   width: 20px;
+   height: 14px;
+   margin-left: auto;
+   margin-right: 30px;
+
+   font-size: 0;
+
+   &::after {
+     content: "";
+
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     width: 20px;
+     height: 2px;
+
+     background-color: #221f1f;
+     box-shadow: 0 6px 0 0 #221f1f,
+                 0 12px 0 0 #221f1f;
+   }
+}
+
+.menu__list {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  right: 30px;
+
+  list-style: none;
+}
+
+.menu {
+  &_nojs {
+    width: 100%;
+  }
+
+  &_is-closed .menu__list {
+    display: none;
+  }
+
+  &_is-opened .menu__list {
+    display: block;
+  }
+
+  &_nojs .menu__list {
+    position: static;
+    display: block;
+  }
+
+  &_nojs .menu__btn {
+    display: none;
+  }
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .menu__link {
+  flex-grow: 1;
+  text-align: center;
   @mixin font 700, 17px, 24px;
 }

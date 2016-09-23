@@ -1,0 +1,21 @@
+.logo {
+  &_page-header {
+    width: 86px;
+    height: 35px;
+
+    flex-grow: 1;
+    margin-right: -20px;
+    margin-left: 30px;
+
+    text-align: center;
+  }
+
+  &_nojs {
+    margin-right: 30px;
+  }
+}
+
+.logo img {
+  width: 86px;
+  height: 35px;
+}

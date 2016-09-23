@@ -1,6 +1,9 @@
-.banner-list__link {
-  @mixin font 700, 19px, 24px, #ffffff;
+.banner-list {
+  width: 100%;
+  list-style: none;
+}
 
+.banner-list__item {
   &:nth-of-type(odd) {
     background-color: #63d1bb;
   }
@@ -8,4 +11,16 @@
   &:nth-of-type(2n) {
     background-color: #56c3b2;
   }
+}
+
+.banner-list__link {
+  display: block;
+  padding: 38px 30px;
+  text-decoration: none;
+  @mixin font 700, 19px, 24px, #ffffff;
+}
+
+.banner-list__link span {
+  display: block;
+  width: 130px;
 }

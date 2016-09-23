@@ -1,5 +1,13 @@
 .about {
-  padding: 35px 0 50px 0;
+  padding: 35px 30px 50px 30px;
+}
+
+.about__us {
+  margin-bottom: 60px;
+}
+
+.about__list {
+  list-style: none;
 }
 
 .about__title {
