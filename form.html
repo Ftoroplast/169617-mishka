@@ -8,10 +8,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
+      <a class="logo logo_page-header logo_nojs" href="index.html">
         <img src="http://placehold.it/95x40" width="95" height="40" alt="Mishka">
       </a>
-      <nav class="menu">
+      <nav class="menu menu_page-header menu_is-closed menu_nojs">
         <a class="menu__btn" href="#">Меню</a>
         <ul class="menu__list">
           <li class="menu__item">
@@ -32,7 +32,7 @@
     <main>
       <h1 class="page-title page-title_background_gray">Вязание на заказ</h1>
       <form class="form" action="#" method="POST">
-        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form__text form__text_intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset form__fieldset_type">
           <legend class="form__legend">Тип</legend>
           <label class="form__label form__label_type">
@@ -102,7 +102,7 @@
           <legend class="form__legend">Доп</legend>
           <textarea class="form__input form__input_additionally" name="additionally"></textarea>
         </fieldset>
-        <p class="form__text">Все поля обязательны для заполнения</p>
+        <p class="form__text form__text_finish">Все поля обязательны для заполнения</p>
         <button class="btn form__btn" type="submit">Отправить заказ</button>
       </form>
     </main>
@@ -125,5 +125,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
