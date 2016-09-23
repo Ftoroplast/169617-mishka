@@ -13,6 +13,11 @@
   &_nojs {
     margin-right: 30px;
   }
+
+  @media (--tablet-widths) {
+    margin-right: 0;
+    text-align: left;
+  }
 }
 
 .logo img {

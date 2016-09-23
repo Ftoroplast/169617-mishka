@@ -9,4 +9,8 @@
   height: 80px;
 
   background-color: #ffffff;
+
+  @media (--tablet-widths) {
+    height: 90px;
+  }
 }

@@ -1,4 +1,6 @@
 .page-title {
+  position: relative;
+
   box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -26,5 +28,17 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center -15px;
     background-repeat: no-repeat;
+  }
+}
+
+.page-title__additional-text {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  display: none;
+  @mixin font 400, 15px, 24px, #444444;
+
+  @media (--tablet-widths) {
+    display: inline;
   }
 }

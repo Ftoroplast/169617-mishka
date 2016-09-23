@@ -2,7 +2,14 @@
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @if $weight == 400 {
+    font-family: "OpenSans Regular", "Arial", sans-serif;
+  }
+
+  @if $weight == 700 {
+    font-family: "OpenSans Bold", "Arial", sans-serif;
+  }
 
   color: $color;
 }
