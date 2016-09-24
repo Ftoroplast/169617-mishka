@@ -33,13 +33,15 @@
   position: absolute;
   z-index: 1;
   top: 80px;
-  left: 30px;
-  right: 30px;
+  left: 9.375%;
+  right: 9.375%;
 
   list-style: none;
 
   @media (--tablet-widths) {
     top: 0;
+    left: 6.5%;
+    right: 6.5%;
   }
 }
 
@@ -73,23 +75,22 @@
 
 .menu__item {
   display: flex;
+  align-items: flex-end;
   flex-grow: 1;
 
   @media (--tablet-widths) {
     &:nth-of-type(1) {
-      align-self: flex-end;
     }
 
     &:nth-of-type(2) {
-      align-self: flex-end;
     }
 
     &:nth-of-type(3) {
-      margin-top: 33px;
+      margin-bottom: 73px;
     }
 
     &:nth-of-type(4) {
-      margin-top: 33px;
+      margin-bottom: 73px;
     }
   }
 }

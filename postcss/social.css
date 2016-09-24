@@ -6,6 +6,10 @@
   padding: 0 30px;
 
   list-style: none;
+
+  @media (--tablet-widths) {
+    margin: auto;
+  }
 }
 
 .social__item {

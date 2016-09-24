@@ -1,5 +1,10 @@
 .about {
-  padding: 35px 30px 50px 30px;
+  padding: 35px 9.375% 50px 9.375%;
+
+  @media (--tablet-widths) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
 }
 
 .about__us {
@@ -8,6 +13,12 @@
 
 .about__list {
   list-style: none;
+
+  @media (--tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .about__title {
@@ -15,6 +26,7 @@
 }
 
 .about__item {
+  width: 50%;
   @mixin font 700, 17px, 24px;
 }
 

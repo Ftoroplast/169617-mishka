@@ -4,7 +4,7 @@
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 9.375%;
   margin: 0;
 
   @mixin font 700, 27px, 30px;
@@ -24,21 +24,31 @@
 
     padding-top: 75px;
 
-    background-color: #fbfbfb;
+    background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center -15px;
     background-repeat: no-repeat;
+
+    @media (--tablet-widths) {
+      height: 625px;
+      background-position: center 100px;
+
+      padding-left: 6.5%;
+      padding-right: 6.5%;
+    }
   }
 }
 
 .page-title__additional-text {
   position: absolute;
+  z-index: 1;
   top: 16px;
-  right: 30px;
+  right: 9.375%;
   display: none;
   @mixin font 400, 15px, 24px, #444444;
 
   @media (--tablet-widths) {
+    right: 6.5%;
     display: inline;
   }
 }

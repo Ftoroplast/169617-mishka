@@ -1,5 +1,10 @@
 .contacts {
-  padding: 35px 30px;
+  padding: 35px 9.375%;
+
+  @media (--tablet-widths) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
 }
 
 .contacts__title {
@@ -12,4 +17,18 @@
 
 .contacts__table {
   @mixin font 400, 15px, 30px, #444444;
+
+  @media (--tablet-widths) {
+    display: block;
+  }
+}
+
+.contacts__table tbody {
+  @media (--tablet-widths) {
+    display: flex;
+  }
+}
+
+.contacts__parameter {
+  width: 50%;
 }

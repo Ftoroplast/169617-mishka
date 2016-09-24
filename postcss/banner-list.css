@@ -1,9 +1,15 @@
 .banner-list {
   width: 100%;
   list-style: none;
+
+  @media (--tablet-widths) {
+    display: flex;
+  }
 }
 
 .banner-list__item {
+  flex-grow: 1;
+
   &:nth-of-type(odd) {
     background-color: #63d1bb;
   }
@@ -15,9 +21,14 @@
 
 .banner-list__link {
   display: block;
-  padding: 38px 30px;
+  padding: 38px 9.375%;
   text-decoration: none;
   @mixin font 700, 19px, 24px, #ffffff;
+
+  @media (--tablet-widths) {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
 }
 
 .banner-list__link span {
