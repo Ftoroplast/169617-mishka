@@ -15,14 +15,17 @@
 }
 
 @define-mixin container {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  padding-left: 9.375%;
+  padding-right: 9.375%;
 
-  @media $tablet-width {
-    width: 768px;
+  @media (--tablet-widths) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
   }
 
-  @media $desktop-width {
-    width: 1200px;
+  @media (--desktop-widths) {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
   }
 }

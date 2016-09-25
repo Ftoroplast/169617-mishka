@@ -1,14 +1,11 @@
 .about {
-  padding: 35px 9.375% 50px 9.375%;
+  @mixin container;
 
-  @media (--tablet-widths) {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-  }
+  padding-top: 35px;
+  padding-bottom: 50px;
 
   @media (--desktop-widths) {
     padding-left: 18.75%;
-    padding-right: 4.17%;
   }
 }
 

@@ -12,8 +12,8 @@
         <img src="http://placehold.it/95x40" width="95" height="40" alt="Mishka">
       </a>
       <nav class="menu menu_page-header menu_is-closed menu_nojs">
-        <a class="menu__btn" href="#">Меню</a>
-        <ul class="menu__list">
+        <a class="menu__btn menu__btn_is-closed menu__btn_nojs" href="#">Меню</a>
+        <ul class="menu__list menu__list_is-closed menu__list_nojs">
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -31,7 +31,15 @@
     </header>
     <main>
       <h1 class="page-title page-title_background_gray">
-        <span class="page-title__main-text">Каталог товаров</span>
+        <ul class="page-title__list">
+          <li class="page-title__item">
+            <a class="page-title__link" href="#">Новые поступления</a>
+          </li>
+          <li class="page-title__item">
+            <a class="page-title__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="page-title__main-text">Каталог товаров</p>
         <span class="page-title__additional-text">Бесплатная доставка по всей России</span>
       </h1>
       <section class="products">
@@ -83,7 +91,7 @@
       </section>
       <article class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" src="#"></video>
+        <video class="production-process__video" src="#" width="300" height="300" poster="http://placehold.it/300x300"></video>
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="btn production-process__btn" href="#">Сделать заказ</a>
       </article>

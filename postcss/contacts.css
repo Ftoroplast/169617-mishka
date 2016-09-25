@@ -1,10 +1,7 @@
 .contacts {
-  padding: 35px 9.375%;
+  @mixin container;
 
-  @media (--tablet-widths) {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-  }
+  padding: 35px 0;
 
   @media (--desktop-widths) {
     position: relative;
@@ -12,7 +9,6 @@
     display: flex;
 
     padding-left: 18.75%;
-    padding-right: 4.17%;
   }
 }
 

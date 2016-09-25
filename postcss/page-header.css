@@ -1,4 +1,6 @@
 .page-header {
+  @mixin container;
+  
   position: relative;
 
   display: flex;
@@ -7,16 +9,10 @@
   flex-wrap: wrap;
 
   height: 80px;
-  padding: 0 9.375%;
 
   background-color: #ffffff;
 
   @media (--tablet-widths) {
     height: 90px;
-    padding: 0 6.5%;
-  }
-
-  @media (--desktop-widths) {
-    padding: 0 4.17%;
   }
 }

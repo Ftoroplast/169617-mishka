@@ -19,6 +19,10 @@
     @media (--tablet-widths) {
       height: 225px;
     }
+
+    @media (--desktop-widths) {
+      margin-bottom: 130px;
+    }
   }
 
   &_background_picture {

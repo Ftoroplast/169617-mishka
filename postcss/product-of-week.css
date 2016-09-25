@@ -1,5 +1,8 @@
 .product-of-week {
-  padding: 35px 9.375% 50px 9.375%;
+  @mixin container;
+
+  padding-top: 35px;
+  padding-bottom: 50px;
 
   @mixin font 400, 15px, 24px;
 
@@ -10,8 +13,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    padding-left: 6.5%;
-    padding-right: 6.5%;
   }
 
   @media (--desktop-widths) {
