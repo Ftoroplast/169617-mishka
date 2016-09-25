@@ -7,6 +7,16 @@
     margin-right: -20px;
 
     text-align: center;
+
+    @media (--tablet-widths) {
+      position: relative;
+      z-index: 2;
+      text-align: left;
+    }
+
+    @media (--desktop-widths) {
+      text-align: center;
+    }
   }
 
   &_page-footer {
@@ -15,16 +25,13 @@
     @media (--tablet-widths) {
       display: block;
       flex-basis: 185px;
+      margin: 0;
+      text-align: left;
     }
   }
 
   &_nojs {
     margin-right: 9.375%;
-  }
-
-  @media (--tablet-widths) {
-    margin-right: 0;
-    text-align: left;
   }
 }
 
