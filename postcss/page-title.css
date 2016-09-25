@@ -17,6 +17,10 @@
 
     background-color: #f1f1f1;
     color: #231f20;
+
+    @media (--tablet-widths) {
+      height: 225px;
+    }
   }
 
   &_background_picture {

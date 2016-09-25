@@ -3,16 +3,41 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 9.375%;
   padding-top: 30px;
+
+  @media (--tablet-widths) {
+    padding: 0 6.5%;
+  }
 }
 
 .product {
+  @media (--tablet-widths) {
+    position: relative;
+
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-right: 30px;
+  }
+
   margin-bottom: 30px;
 }
 
 .product__picture {
   text-align: center;
+
+  @media (--tablet-widths) {
+    width: 50%;
+    margin-right: 30px;
+  }
+}
+
+.product__info {
+  @media (--tablet-widths) {
+    width: 50%;
+  }
 }
 
 .product__title {
@@ -21,8 +46,22 @@
 
 .product__parameters {
   @mixin font 400, 13px, 30px, #444444;
+
+  @media (--tablet-widths) {
+
+  }
 }
 
 .product__price {
   @mixin font 700, 15px, 24px;
+
+  @media (--tablet-widths) {
+
+  }
+}
+
+.product__btn {
+  @media (--tablet-widths) {
+
+  }
 }
