@@ -5,6 +5,11 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
   }
+
+  @media (--desktop-widths) {
+    padding-left: 18.75%;
+    padding-right: 4.17%;
+  }
 }
 
 .about__us {

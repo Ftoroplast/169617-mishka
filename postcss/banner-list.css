@@ -29,6 +29,11 @@
     padding-left: 13%;
     padding-right: 13%;
   }
+
+  @media (--desktop-widths) {
+    padding-left: 8.34%;
+    padding-right: 8.34%;
+  }
 }
 
 .banner-list__link span {

@@ -13,6 +13,11 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
   }
+
+  @media (--desktop-widths) {
+    padding-left: 18.75%;
+    padding-right: 18.75%;
+  }
 }
 
 .product-of-week__title {
@@ -24,6 +29,11 @@
       flex-grow: 1;
       min-width: 50%;
     }
+
+    @media (--desktop-widths) {
+      order: 2;
+      width: 100%;
+    }
   }
 
   &_level_2 {
@@ -31,15 +41,28 @@
 
     @media (--tablet-widths) {
       order: 2;
-      flex-basis: 100px;
       box-sizing: border-box;
       padding-right: 30px;
       text-align: center;
+    }
+
+    @media (--desktop-widths) {
+      order: 1;
+      flex-basis: 24.325%;
+
+      margin-left: -24.325%;
     }
   }
 
   @media (--tablet-widths) {
     margin-bottom: 60px;
+  }
+}
+
+.product-of-week__title_level_2 span {
+  @media (--tablet-widths) {
+    display: block;
+    width: 100px;
   }
 }
 
@@ -57,6 +80,10 @@
     position: absolute;
     top: 200px;
     left: 6.5%;
+  }
+
+  @media (--desktop-widths) {
+    left: 18.75%;
   }
 }
 
@@ -78,6 +105,10 @@
     left: 25%;
     transform: translateX(-50%);
   }
+
+  @media (--desktop-widths) {
+    padding-left: 18.75%;
+  }
 }
 
 .product-of-week__btn {
@@ -88,5 +119,9 @@
     top: 350px;
     left: 25%;
     transform: translateX(-50%);
+  }
+
+  @media (--desktop-widths) {
+    padding-left: 18.75%;
   }
 }
