@@ -1,4 +1,5 @@
 @import "global/normalize.css";
+@import "global/fonts.css";
 @import "global/variables.css";
 @import "global/mixins.css";
 @import "global/global.css";
@@ -19,7 +20,6 @@
 @import "page-footer.css";
 @import "social.css";
 @import "copyright.css";
-@import "products.css";
 @import "product.css";
 @import "production-process.css";
 @import "form.css";

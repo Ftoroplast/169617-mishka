@@ -1,7 +1,37 @@
+.reviews {
+  @media (--tablet-widths) {
+    position: relative;
+  }
+}
+
+.reviews__post {
+  @media (--tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.reviews__author-info {
+  width: 50%;
+}
+
 .reviews__author-name {
   @mixin font 700, 18px, 24px;
 }
 
 .reviews__author-nickname {
   @mixin font 400, 18px, 30px, #444444;
+}
+
+.reviews__controls {
+  width: 50%;
+  text-align: right;
+}
+
+.reviews__btn {
+  @media (--tablet-widths) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

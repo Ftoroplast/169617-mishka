@@ -1,3 +1,9 @@
+.modal-window {
+  &_add-to-cart {
+    display: none;
+  }
+}
+
 .modal-window__title {
   @mixin font 700, 25px, 30px;
 }

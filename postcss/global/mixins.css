@@ -2,7 +2,30 @@
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
-  font-family: "Open Sans", "Arial", sans-serif;
+
+  @if $weight == 400 {
+    font-family: "OpenSans Regular", "Arial", sans-serif;
+  }
+
+  @if $weight == 700 {
+    font-family: "OpenSans Bold", "Arial", sans-serif;
+  }
 
   color: $color;
+}
+
+@define-mixin container {
+  min-width: 320px;
+  padding-left: 9.375%;
+  padding-right: 9.375%;
+
+  @media (--tablet-widths) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  @media (--desktop-widths) {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
 }

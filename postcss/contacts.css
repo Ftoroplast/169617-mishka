@@ -1,9 +1,24 @@
 .contacts {
+  @mixin container;
+
   padding: 35px 0;
+
+  @media (--desktop-widths) {
+    position: relative;
+
+    display: flex;
+
+    padding-left: 18.75%;
+  }
 }
 
 .contacts__title {
   @mixin font 700, 18px, 30px;
+
+  @media (--desktop-widths) {
+    order: 1;
+    width: 50%;
+  }
 }
 
 .contacts__link {
@@ -12,4 +27,36 @@
 
 .contacts__table {
   @mixin font 400, 15px, 30px, #444444;
+
+  @media (--tablet-widths) {
+    display: block;
+  }
+
+  @media (--desktop-widths) {
+    position: absolute;
+    top: 100px;
+
+    display: table;
+  }
+}
+
+.contacts__table tbody {
+  @media (--tablet-widths) {
+    display: flex;
+  }
+
+  @media (--desktop-widths) {
+    display: table-row-group;
+  }
+}
+
+.contacts__parameter {
+  width: 50%;
+}
+
+.contacts__btn {
+  @media (--desktop-widths) {
+    position: absolute;
+    top: 170px;
+  }
 }
