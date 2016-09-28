@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo logo_page-header logo_nojs" href="index.html">
-        <img src="http://placehold.it/95x40" width="95" height="40" alt="Mishka">
-      </a>
+      <div class="logo logo_page-header logo_nojs">
+        <a href="index.html"><img src="http://placehold.it/95x40" width="95" height="40" alt="Mishka"></a>
+      </div>
       <nav class="menu menu_page-header menu_is-closed menu_nojs">
         <a class="menu__btn menu__btn_is-closed menu__btn_nojs" href="#">Меню</a>
         <ul class="menu__list menu__list_is-closed menu__list_nojs">
@@ -19,11 +19,11 @@
           <li class="menu__item">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Поиск по сайту</a>
+          <li class="menu__item menu__item_search">
+            <a class="menu__link menu__link_search" href="#">Поиск по сайту</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Корзина: пока пуста</a>
+          <li class="menu__item menu__item_cart">
+            <a class="menu__link menu__link_cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -90,7 +90,10 @@
       </section>
       <article class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" src="#" width="300" height="300" poster="http://placehold.it/300x300"></video>
+        <div class="production-process__video">
+          <img src="http://placehold.it/300x300" width="300" height="300" alt="">
+          <img src="https://placehold.it/50x50" width="50" height="50" alt="">
+        </div>
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="btn production-process__btn" href="#">Сделать заказ</a>
       </article>

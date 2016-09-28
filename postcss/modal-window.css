@@ -1,22 +1,102 @@
 .modal-window {
-  &_add-to-cart {
+  @mixin container;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 6;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 45px;
+
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  background-color: $default-bg-color;
+
+  font-size: 0;
+
+  &_is-closed {
     display: none;
+  }
+
+  &_is-opened {
+    display: block;
   }
 }
 
 .modal-window__title {
   @mixin font 700, 25px, 30px;
+
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .modal-window__text {
   @mixin font 400, 15px 30px, #444444;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .modal-window__label {
   @mixin font 700, 17px, 16px, #444444;
+
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 32%;
+  height: 52px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-right: 2%;
+  margin-bottom: 30px;
+
+  border: 1px solid #ececec;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+}
+
+#sizeM:checked ~ label[for="sizeM"],
+#sizeS:checked ~ label[for="sizeS"],
+#sizeL:checked ~ label[for="sizeL"] {
+  border-color: #63d1bb;
+}
+
+.modal-window input[type="radio"] {
+  display: none;
 }
 
 .modal-window__btn {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: #63d1bb;
   color: #ffffff;
 }

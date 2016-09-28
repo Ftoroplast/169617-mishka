@@ -26,6 +26,4 @@
 
     return false;
   }
-
-  var modalWindowAddToCart = document.querySelector(".modal-window_add-to-cart");
 })();

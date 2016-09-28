@@ -9,13 +9,13 @@
 
    display: block;
    width: 20px;
-   height: 14px;
-   margin-left: auto;
-   margin-right: 30px;
+   height: 20px;
+   margin: auto;
+   margin-right: 0;
 
    font-size: 0;
 
-   &::after {
+   &_is-closed::after {
      content: "";
 
      position: absolute;
@@ -24,10 +24,27 @@
 
      width: 20px;
      height: 2px;
+     margin: 3px 0;
 
      background-color: #221f1f;
      box-shadow: 0 6px 0 0 #221f1f,
                  0 12px 0 0 #221f1f;
+   }
+
+   &_is-opened::after {
+     content: "";
+
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     width: 20px;
+     height: 20px;
+
+     background-image: url("../img/icon-menu-close.svg");
+     background-size: 20px 20px;
+     background-position: center;
+     background-repeat: no-repeat;
    }
 
    &_nojs {
@@ -43,10 +60,14 @@
   position: absolute;
   z-index: 1;
   top: 80px;
-  left: 9.375%;
-  right: 9.375%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
 
   list-style: none;
+
+  background-color: $default-bg-color;
 
   &_is-closed {
     display: none;
@@ -69,20 +90,17 @@
 
   @media (--tablet-widths) {
     top: 0;
-    left: 6.5%;
-    right: 6.5%;
-  }
-
-  @media (--desktop-widths) {
-    left: 4.17%;
-    right: 4.17%;
   }
 }
 
 .menu__item {
+  @mixin container;
+
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
+
+  border-top: 1px solid #ececec;
 
   @media (--tablet-widths) {
     &:nth-of-type(1) {
@@ -114,10 +132,22 @@
 }
 
 .menu__link {
-  flex-grow: 1;
-  text-align: center;
-  text-decoration: none;
   @mixin font 700, 17px, 24px;
+
+  flex-grow: 1;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 23.44%;
+
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (--tablet-widths) {
     flex-grow: 0;
