@@ -15,6 +15,7 @@
 }
 
 @define-mixin container {
+  box-sizing: border-box;
   min-width: 320px;
   padding-left: 9.375%;
   padding-right: 9.375%;
