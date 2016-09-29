@@ -3,3 +3,4 @@ $default-bg-color: #ffffff;
 
 @custom-media --tablet-widths (min-width: 768px);
 @custom-media --desktop-widths (min-width: 1200px);
+@custom-media --mobile-widths-only (max-width: 767px);

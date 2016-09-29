@@ -67,15 +67,13 @@
 
   list-style: none;
 
-  background-color: $default-bg-color;
-
   &_is-closed {
     display: none;
 
     @media (--tablet-widths) {
       display: flex;
       justify-content: space-between;
-      height: 130px;
+      height: 135px;
     }
   }
 
@@ -88,22 +86,31 @@
     display: block;
   }
 
+  @media (--mobile-widths-only) {
+    background-color: $default-bg-color;
+  }
+
   @media (--tablet-widths) {
+    @mixin container;
+
     top: 0;
   }
 }
 
 .menu__item {
-  @mixin container;
-
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
 
-  border-top: 1px solid #ececec;
+  @media (--mobile-widths-only) {
+    @mixin container;
+
+    border-top: 1px solid #ececec;
+  }
 
   @media (--tablet-widths) {
     &:nth-of-type(1) {
+
     }
 
     &:nth-of-type(2) {
@@ -112,22 +119,73 @@
     &:nth-of-type(3) {
       justify-content: flex-end;
       margin-bottom: 73px;
+      height: 90px;
+
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
     }
 
     &:nth-of-type(4) {
       justify-content: flex-end;
       margin-bottom: 73px;
+      height: 90px;
     }
   }
 
   @media (--desktop-widths) {
     &:nth-of-type(1) {
       margin-bottom: 73px;
+      height: 90px;
+      border-right: 1px solid #ececec;
     }
 
     &:nth-of-type(2) {
+      flex-grow: 5;
+      padding-left: 4.8%;
+      height: 90px;
       margin-bottom: 73px;
     }
+  }
+}
+
+.menu__item:nth-of-type(1) .menu__link {
+  @media (--tablet-widths) {
+    font-size: 15px;
+  }
+
+  @media (--desktop-widths) {
+    margin: auto;
+    margin-left: 0;
+
+    font-size: 17px;
+  }
+}
+
+.menu__item:nth-of-type(2) .menu__link {
+  @media (--tablet-widths) {
+    font-size: 15px;
+  }
+
+  @media (--desktop-widths) {
+    margin: auto;
+    margin-left: 0;
+
+    font-size: 17px;
+  }
+}
+
+.menu__item:nth-of-type(3) .menu__link {
+  @media (--tablet-widths) {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.menu__item:nth-of-type(4) .menu__link {
+  @media (--tablet-widths) {
+    margin: auto;
+    margin-right: 0;
+    text-align: right;
   }
 }
 
@@ -151,6 +209,6 @@
 
   @media (--tablet-widths) {
     flex-grow: 0;
-    text-align: left;
+    padding: 0;
   }
 }
