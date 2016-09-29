@@ -1,10 +1,14 @@
 .page-title {
+  @mixin container;
+
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 0 9.375%;
+  padding: 0;
   margin: 0;
 
   &_background_gray {
@@ -26,7 +30,7 @@
   }
 
   &_background_picture {
-    height: 285px;
+    height: 485px;
 
     padding-top: 75px;
 
@@ -40,8 +44,6 @@
       background-position: center 100px;
 
       padding-top: 155px;
-      padding-left: 6.5%;
-      padding-right: 6.5%;
     }
 
     @media (--desktop-widths) {
@@ -51,12 +53,19 @@
 }
 
 .page-title__main-text {
-  max-width: 610px;
+  max-width: 300px;
   margin: 0 auto;
   @mixin font 700, 27px, 30px;
 
+  @media (--tablet-widths) {
+    max-width: 610px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   @media (--desktop-widths) {
-    @mixin font 700, 53px, 57px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -108,4 +117,12 @@
 .page-title__link {
   text-decoration: none;
   @mixin font 700, 15px, 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
