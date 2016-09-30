@@ -13,9 +13,14 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    height: 630px;
   }
 
   @media (--desktop-widths) {
+    height: 805px;
+    padding-bottom: 100px;
+    padding-top: 135px;
     padding-left: 18.75%;
     padding-right: 18.75%;
   }
@@ -32,12 +37,19 @@
     @media (--tablet-widths) {
       order: 1;
       flex-grow: 1;
+      align-self: flex-start;
       min-width: 50%;
+
+      font-size: 43px;
+      line-height: 50px;
     }
 
     @media (--desktop-widths) {
       order: 2;
       width: 100%;
+
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 
@@ -46,18 +58,21 @@
 
     margin-bottom: 25px;
 
+    text-transform: uppercase;
+
     @media (--tablet-widths) {
       order: 2;
       box-sizing: border-box;
       padding-right: 30px;
       text-align: center;
+      align-self: flex-start;
     }
 
     @media (--desktop-widths) {
       order: 1;
-      flex-basis: 24.325%;
+      flex-basis: 19.325%;
 
-      margin-left: -24.325%;
+      margin-left: -19.325%;
     }
   }
 
@@ -78,7 +93,7 @@
   margin-bottom: 27px;
 
   @media (--tablet-widths) {
-    width: 50%;
+    width: 37%;
     order: 3;
   }
 }
@@ -92,11 +107,14 @@
     order: 5;
 
     position: absolute;
-    top: 200px;
+    top: 245px;
     left: 6.5%;
+
+    width: 37%;
   }
 
   @media (--desktop-widths) {
+    top: 370px;
     left: 18.75%;
   }
 }
@@ -116,7 +134,9 @@
 
   @media (--tablet-widths) {
     order: 4;
-    width: 50%;
+    width: 63%;
+
+    text-align: right;
   }
 }
 
@@ -129,18 +149,19 @@
     order: 6;
 
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 25%;
     transform: translateX(-50%);
   }
 
   @media (--desktop-widths) {
+    top: 580px;
     padding-left: 18.75%;
   }
 }
 
 .product-of-week__btn {
-  display: block;
+  width: 37%;
   padding: 17px 0;
   border: 2px solid #444444;
   text-align: center;
@@ -150,12 +171,13 @@
     order: 7;
 
     position: absolute;
-    top: 350px;
+    top: 470px;
     left: 25%;
     transform: translateX(-50%);
   }
 
   @media (--desktop-widths) {
+    top: 650px;
     padding-left: 18.75%;
   }
 }
