@@ -14,15 +14,13 @@
     display: flex;
     flex-wrap: wrap;
 
-    height: 630px;
+    padding-bottom: 145px;
   }
 
   @media (--desktop-widths) {
-    height: 805px;
     padding-bottom: 100px;
     padding-top: 135px;
     padding-left: 18.75%;
-    padding-right: 18.75%;
   }
 }
 
@@ -37,8 +35,7 @@
     @media (--tablet-widths) {
       order: 1;
       flex-grow: 1;
-      align-self: flex-start;
-      min-width: 50%;
+      min-width: 70%;
 
       font-size: 43px;
       line-height: 50px;
@@ -65,7 +62,7 @@
       box-sizing: border-box;
       padding-right: 30px;
       text-align: center;
-      align-self: flex-start;
+      align-self: center;
     }
 
     @media (--desktop-widths) {
@@ -73,6 +70,7 @@
       flex-basis: 19.325%;
 
       margin-left: -19.325%;
+      padding-right: 0;
     }
   }
 
@@ -85,6 +83,10 @@
   @media (--tablet-widths) {
     display: block;
     width: 100px;
+  }
+
+  @media (--desktop-widths) {
+    margin: 0 auto;
   }
 }
 
@@ -138,6 +140,11 @@
 
     text-align: right;
   }
+
+  @media (--desktop-widths) {
+    min-height: 600px;
+    margin-top: -170px;
+  }
 }
 
 .product-of-week__price {
@@ -156,12 +163,12 @@
 
   @media (--desktop-widths) {
     top: 580px;
-    padding-left: 18.75%;
+    left: 37.25%;
   }
 }
 
 .product-of-week__btn {
-  width: 37%;
+  display: block;
   padding: 17px 0;
   border: 2px solid #444444;
   text-align: center;
@@ -174,10 +181,13 @@
     top: 470px;
     left: 25%;
     transform: translateX(-50%);
+
+    width: 37%;
   }
 
   @media (--desktop-widths) {
     top: 650px;
-    padding-left: 18.75%;
+    left: 18.75%;
+    transform: none;
   }
 }
