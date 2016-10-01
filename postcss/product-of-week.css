@@ -168,12 +168,6 @@
 }
 
 .product-of-week__btn {
-  display: block;
-  padding: 17px 0;
-  border: 2px solid #444444;
-  text-align: center;
-  text-decoration: none;
-
   @media (--tablet-widths) {
     order: 7;
 
