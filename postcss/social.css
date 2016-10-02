@@ -4,7 +4,8 @@
   align-items: center;
 
   padding: 0 30px;
-
+  margin: 0;
+  
   list-style: none;
 
   @media (--tablet-widths) {
