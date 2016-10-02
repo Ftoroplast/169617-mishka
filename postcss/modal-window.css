@@ -88,15 +88,21 @@
 }
 
 .modal-window__btn {
-  display: block;
-  padding-top: 17px;
-  padding-bottom: 17px;
   margin: 0 auto;
 
-  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
 
   background-color: #63d1bb;
   color: #ffffff;
+  border: none;
+
+  &:hover {
+    background-color: #63d1bb;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #63d1bb;
+    color: #ffffff;
+  }
 }
