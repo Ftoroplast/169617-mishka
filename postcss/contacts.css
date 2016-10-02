@@ -95,6 +95,7 @@
 
 .contacts__value {
   width: 70%;
+  overflow: hidden;
 
   @media (--desktop-widths) {
     width: 50%;
@@ -104,7 +105,7 @@
 
 .contacts__btn {
   margin: 0 auto;
-  
+
   @media (--tablet-widths) {
     width: 230px;
   }
@@ -112,5 +113,38 @@
   @media (--desktop-widths) {
     position: absolute;
     top: 480px;
+  }
+}
+
+.contacts__link {
+  &_email {
+    text-decoration: none;
+
+    &::after {
+      content: "";
+
+      display: block;
+      height: 1px;
+
+      background-color: #62d1ba;
+    }
+
+    &:hover {
+      color: #46c1ae;
+
+      &::after {
+        background-color: #46c1ae;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      &::after {
+        opacity: 0.3;
+
+        transform: translateX(-25px);
+      }
+    }
   }
 }
