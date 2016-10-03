@@ -4,12 +4,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 55px;
 }
 
 .form__fieldset {
-  @mixin container;
+  @mixin container margin;
 
   display: flex;
   align-items: center;
@@ -17,6 +17,10 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 45px;
+  border-color: #63d1bb;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 
   @media (--tablet-widths) {
     display: block;
@@ -51,6 +55,8 @@
 
 .form__legend {
   @mixin font 700, 17px, 16px, #63d1bb;
+  padding-right: 25px;
+  margin-bottom: 25px;
 
   @media (--tablet-widths) {
     display: inline-block;
@@ -83,8 +89,9 @@
 
 .form__text {
   @mixin container;
-
   @mixin font 400, 13px, 24px, #444444;
+
+  margin: 0;
 
   &_start {
     margin-bottom: 30px;
@@ -106,9 +113,9 @@
 }
 
 .form__label {
-  width: 100%;
-
   @mixin font 700, 17px, 18px;
+  display: block;
+  margin-bottom: 15px;
 
   @media (--tablet-widths) {
     display: block;

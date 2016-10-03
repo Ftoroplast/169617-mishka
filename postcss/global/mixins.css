@@ -14,19 +14,37 @@
   color: $color;
 }
 
-@define-mixin container {
+@define-mixin container $mode: padding {
   box-sizing: border-box;
   min-width: 320px;
-  padding-left: 9.375%;
-  padding-right: 9.375%;
 
-  @media (--tablet-widths) {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
+  @if $mode == padding {
+    padding-left: 9.375%;
+    padding-right: 9.375%;
+
+    @media (--tablet-widths) {
+      padding-left: 6.5%;
+      padding-right: 6.5%;
+    }
+
+    @media (--desktop-widths) {
+      padding-left: 4.17%;
+      padding-right: 4.17%;
+    }
   }
 
-  @media (--desktop-widths) {
-    padding-left: 4.17%;
-    padding-right: 4.17%;
+  @if $mode == margin {
+    margin-left: 9.375%;
+    margin-right: 9.375%;
+
+    @media (--tablet-widths) {
+      margin-left: 6.5%;
+      margin-right: 6.5%;
+    }
+
+    @media (--desktop-widths) {
+      margin-left: 4.17%;
+      margin-right: 4.17%;
+    }
   }
 }
