@@ -25,6 +25,7 @@
     }
 
     @media (--desktop-widths) {
+      height: 255px;
       margin-bottom: 130px;
     }
   }

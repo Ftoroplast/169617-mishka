@@ -20,6 +20,10 @@
 
   font-size: 0;
 
+  @media (--tablet-widths) {
+    width: 565px;
+  }
+
   &_is-closed {
     display: none;
   }
