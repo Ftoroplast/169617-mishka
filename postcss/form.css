@@ -167,6 +167,15 @@
       border: 2px solid #444444;
     }
 
+    &:hover::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: #444444;
+      opacity: 0.3;
+    }
+
     &::after {
       content: "";
       display: none;
@@ -188,6 +197,14 @@
       height: 40px;
       margin-right: 20px;
       border: 2px solid #444444;
+    }
+
+    &:hover::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: rgba(68, 68, 68, 0.3);
     }
 
     &::after {
@@ -226,7 +243,7 @@
 }
 
 .form__input {
-  @mixin font 700, 17px, 18px;
+  @mixin font 400, 19px, 18px, #444444;
   box-sizing: border-box;
   width: 100%;
   height: 50px;
@@ -236,6 +253,14 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:invalid {
+    border-color: #f0b1b1;
+  }
 
   &_additionally {
     height: auto;
@@ -276,21 +301,17 @@
 }
 
 ::-webkit-input-placeholder {
-  @mixin font 400, 17px, 18px, #444444;
   opacity: 0.3;
 }
 
 ::-moz-placeholder {
-  @mixin font 400, 17px, 18px, #444444;
   opacity: 0.3;
 }
 
 :-moz-placeholder {
-  @mixin font 400, 17px, 18px, #444444;
   opacity: 0.3;
 }
 
 :-ms-input-placeholder {
-  @mixin font 400, 17px, 18px, #444444;
   opacity: 0.3;
 }
