@@ -16,11 +16,26 @@
 
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 45px;
+  padding-top: 25px;
+  padding-bottom: 35px;
   border-color: #63d1bb;
   border-left: none;
   border-right: none;
   border-bottom: none;
+
+  font-size: 0;
+
+  &:last-of-type {
+    padding-bottom: 15px;
+  }
+
+  &_phone {
+    padding-top: 5px;
+  }
+
+  &_email {
+    padding-top: 5px;
+  }
 
   @media (--tablet-widths) {
     display: block;
@@ -56,7 +71,7 @@
 .form__legend {
   @mixin font 700, 17px, 16px, #63d1bb;
   padding-right: 25px;
-  margin-bottom: 25px;
+  text-transform: uppercase;
 
   @media (--tablet-widths) {
     display: inline-block;
@@ -87,6 +102,11 @@
   }
 }
 
+.form__fields_type input,
+.form__fieldset_color input {
+  display: none;
+}
+
 .form__text {
   @mixin container;
   @mixin font 400, 13px, 24px, #444444;
@@ -102,6 +122,8 @@
   }
 
   &_finish {
+    margin-bottom: 20px;
+
     @media (--tablet-widths) {
       order: 2;
     }
@@ -114,7 +136,10 @@
 
 .form__label {
   @mixin font 700, 17px, 18px;
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin-bottom: 15px;
 
   @media (--tablet-widths) {
@@ -126,13 +151,119 @@
       width: 33%;
     }
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &_type {
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border-radius: 50%;
+      border: 2px solid #444444;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #62d1ba;
+    }
+  }
+
+  &_color {
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border: 2px solid #444444;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+
+      background-image: url("http://placehold.it/16x16");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &_name {
+    margin-bottom: 0;
+  }
+
+  &_phone {
+    display: none;
+  }
+}
+
+#accessory:checked ~ label[for="accessory"]::after,
+#toy:checked ~ label[for="toy"]::after {
+  display: block;
+}
+
+#white:checked ~ label[for="white"]::before,
+#gray:checked ~ label[for="gray"]::before,
+#tiffani:checked ~ label[for="tiffani"]::before,
+#black:checked ~ label[for="black"]::before,
+#pink:checked ~ label[for="pink"]::before,
+#orange:checked ~ label[for="orange"]::before {
+  background-image: url("http://placehold.it/16x16");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form__input {
   @mixin font 700, 17px, 18px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &_additionally {
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    border: 2px solid #000000;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &_additionally {
+    padding: 15px;
+  }
 }
 
 .form__btn {
+  @mixin container margin;
+
+  &:focus {
+    outline: none;
+  }
+
   @media (--tablet-widths) {
     order: 1;
 
@@ -142,4 +273,24 @@
   @media (--desktop-widths) {
     margin-left: 18.75%;
   }
+}
+
+::-webkit-input-placeholder {
+  @mixin font 400, 17px, 18px, #444444;
+  opacity: 0.3;
+}
+
+::-moz-placeholder {
+  @mixin font 400, 17px, 18px, #444444;
+  opacity: 0.3;
+}
+
+:-moz-placeholder {
+  @mixin font 400, 17px, 18px, #444444;
+  opacity: 0.3;
+}
+
+:-ms-input-placeholder {
+  @mixin font 400, 17px, 18px, #444444;
+  opacity: 0.3;
 }
