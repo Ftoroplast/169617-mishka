@@ -95,6 +95,14 @@
 .product__title {
   @mixin font 700, 17px, 24px;
   margin: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__parameters {
