@@ -10,18 +10,19 @@
   @media (--tablet-widths) {
     padding-top: 75px;
   }
+
+  @media (--desktop-widths) {
+    padding-top: 125px;
+  }
 }
 
 .form__fieldset {
-  @mixin container margin;
-
-  display: flex;
-  align-items: center;
-
   box-sizing: border-box;
   width: 100%;
   padding-top: 25px;
   padding-bottom: 35px;
+  margin-left: 9.375%;
+  margin-right: 9.375%;
   border-color: #63d1bb;
   border-left: none;
   border-right: none;
@@ -31,6 +32,14 @@
 
   &:last-of-type {
     padding-bottom: 15px;
+
+    @media (--tablet-widths) {
+      padding-bottom: 50px;
+    }
+
+    @media (--desktop-widths) {
+      padding-bottom: 90px;
+    }
   }
 
   &_phone {
@@ -42,11 +51,11 @@
   }
 
   @media (--tablet-widths) {
-    @mixin container padding;
-
     display: block;
     border: none;
     margin: 0;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -72,6 +81,11 @@
       padding-top: 10px;
     }
   }
+
+  @media (--desktop-widths) {
+    padding-left: 18.75%;
+    padding-right: 18.75%;
+  }
 }
 
 .form__legend {
@@ -83,11 +97,13 @@
     display: inline-block;
     vertical-align: top;
     width: 25%;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   @media (--desktop-widths) {
-    width: 15.907%;
+    width: 25%;
+    margin-left: -12.5%;
+    transform: translateX(-50%);
     text-align: center;
   }
 }
@@ -102,12 +118,9 @@
     font-size: 0;
   }
 
-  &_color {
-    @media (--desktop-widths) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 15.907%;
-    }
+  @media (--desktop-widths) {
+    width: 100%;
+    margin-left: -12.5%;
   }
 }
 
@@ -126,7 +139,7 @@
     margin-bottom: 30px;
 
     @media (--tablet-widths) {
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 
     @media (--desktop-widths) {
@@ -139,6 +152,8 @@
 
     @media (--tablet-widths) {
       order: 2;
+      align-self: center;
+      margin-bottom: 0;
     }
 
     @media (--desktop-widths) {
@@ -160,6 +175,12 @@
 
   &:nth-of-type(5) {
     @media (--tablet-widths) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media (--desktop-widths) {
       margin-bottom: 0;
     }
   }
@@ -260,19 +281,53 @@
 
   &_name {
     margin-bottom: 0;
+
+    @media (--tablet-widths) {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 10px;
+    }
   }
 
   &_first-name {
     @media (--tablet-widths) {
-      display: inline-block;
-      vertical-align: top;
       width: 14%;
-      padding-top: 10px;
+    }
+
+    @media (--desktop-widths) {
+      width: 10%;
+    }
+  }
+
+  &_last-name {
+    @media (--tablet-widths) {
+      width: 25%;
+    }
+
+    @media (--desktop-widths) {
+      width: 17%;
+    }
+  }
+
+  &_patronym {
+    @media (--tablet-widths) {
+      width: 25%;
+    }
+
+    @media (--desktop-widths) {
+      width: 17%;
     }
   }
 
   &_phone {
     display: none;
+  }
+
+  @media (--tablet-widths) {
+    margin-bottom: 20px;
+
+    font-size: 19px;
+    line-height: 18px;
   }
 }
 
@@ -304,7 +359,13 @@
   border: none;
   border-bottom: 2px solid #000000;
 
+  background-color: transparent;
+
   &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
     border-color: #62d1ba;
   }
 
@@ -331,11 +392,57 @@
     padding: 15px;
   }
 
-  &_first-name {
+  &_name {
     @media (--tablet-widths) {
+      position: relative;
+      top: -5px;
+
       display: inline-block;
       vertical-align: top;
+    }
+  }
+
+  &_first-name {
+    @media (--tablet-widths) {
       width: 86%;
+    }
+
+    @media (--desktop-widths) {
+      width: 90%;
+    }
+  }
+
+  &_last-name {
+    @media (--tablet-widths) {
+      width: 75%;
+    }
+
+    @media (--desktop-widths) {
+      width: 83%;
+    }
+  }
+
+  &_patronym {
+    @media (--tablet-widths) {
+      width: 75%;
+    }
+
+    @media (--desktop-widths) {
+      width: 83%;
+    }
+  }
+
+  &_phone {
+    @media (--tablet-widths) {
+      position: relative;
+      top: -10px;
+    }
+  }
+
+  &_email {
+    @media (--tablet-widths) {
+      position: relative;
+      top: -10px;
     }
   }
 }
@@ -349,6 +456,7 @@
 
   @media (--tablet-widths) {
     order: 1;
+    align-self: center;
 
     margin-left: 6.5%;
   }

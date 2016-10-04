@@ -2,7 +2,6 @@
   @mixin font 700, 17px, 16px, #444444;
 
   display: block;
-  width: 100%;
   padding: 17px 0;
   border: 2px solid #444444;
   text-align: center;
