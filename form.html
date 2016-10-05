@@ -43,88 +43,120 @@
       </h1>
       <form class="form" action="#" method="POST">
         <p class="form__text form__text_start">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="form__fieldset form__fieldset_type">
-          <legend class="form__legend">Тип</legend>
+        <div class="form__fieldset form__fieldset_type">
+          <p class="form__legend">Тип</p>
           <div class="form__fields form__fields_type">
-            <input type="radio" name="type" id="accessory" value="accessory">
-            <label class="form__label form__label_type" for="accessory">
-              Аксессуар для интерьера
-            </label>
-            <input type="radio" name="type" id="toy" value="toy">
-            <label class="form__label form__label_type" for="toy">
-              Детская игрушка
-            </label>
+            <div class="form__field form__field_type">
+              <input type="radio" name="type" id="accessory" value="accessory">
+              <label class="form__label form__label_type" for="accessory">
+                Аксессуар для интерьера
+              </label>
+            </div>
+            <div class="form__field form__field_type">
+              <input type="radio" name="type" id="toy" value="toy">
+              <label class="form__label form__label_type" for="toy">
+                Детская игрушка
+              </label>
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset_color">
-          <legend class="form__legend">Цвет</legend>
+        </div>
+        <div class="form__fieldset form__fieldset_color">
+          <p class="form__legend">Цвет</p>
           <div class="form__fields form__fields_color">
-            <input type="checkbox" name="white" id="white">
-            <label class="form__label form__label_color" for="white">
-              Белый
-            </label>
-            <input type="checkbox" name="gray" id="gray">
-            <label class="form__label form__label_color" for="gray">
-              Серый
-            </label>
-            <input type="checkbox" name="tiffani" id="tiffani">
-            <label class="form__label form__label_color" for="tiffani">
-              «Тиффани»
-            </label>
-            <input type="checkbox" name="black" id="black">
-            <label class="form__label form__label_color" for="black">
-              Черный
-            </label>
-            <input type="checkbox" name="pink" id="pink">
-            <label class="form__label form__label_color" for="pink">
-              Розовый
-            </label>
-            <input type="checkbox" name="orange" id="orange">
-            <label class="form__label form__label_color" for="orange">
-              Оранжевый
-            </label>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="white" id="white">
+              <label class="form__label form__label_color" for="white">
+                Белый
+              </label>
+            </div>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="gray" id="gray">
+              <label class="form__label form__label_color" for="gray">
+                Серый
+              </label>
+            </div>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="tiffani" id="tiffani">
+              <label class="form__label form__label_color" for="tiffani">
+                «Тиффани»
+              </label>
+            </div>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="black" id="black">
+              <label class="form__label form__label_color" for="black">
+                Черный
+              </label>
+            </div>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="pink" id="pink">
+              <label class="form__label form__label_color" for="pink">
+                Розовый
+              </label>
+            </div>
+            <div class="form__field form__field_color">
+              <input type="checkbox" name="orange" id="orange">
+              <label class="form__label form__label_color" for="orange">
+                Оранжевый
+              </label>
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset_name">
-          <legend class="form__legend">ФИО</legend>
+        </div>
+        <div class="form__fieldset form__fieldset_name">
+          <p class="form__legend">ФИО</p>
           <div class="form__fields form__fields_name">
-            <label class="form__label form__label_name form__label_first-name" for="first-name">
-              Имя:
-            </label>
-            <input class="form__input form__input_name form__input_first-name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя">
-            <label class="form__label form__label_name form__label_last-name" for="last-name">
-              Фамилия:
-            </label>
-            <input class="form__input form__input_name form__input_last-name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию">
-            <label class="form__label form__label_name form__label_patronym" for="patronym">
-              Отчество:
-            </label>
-            <input class="form__input form__input_name form__input_patronym" type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
+            <div class="form__field form__field_name">
+              <label class="form__label form__label_name form__label_first-name" for="first-name">
+                Имя:
+              </label>
+              <input class="form__input form__input_name form__input_first-name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя">
+            </div>
+            <div class="form__field form__field_name">
+              <label class="form__label form__label_name form__label_last-name" for="last-name">
+                Фамилия:
+              </label>
+              <input class="form__input form__input_name form__input_last-name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию">
+            </div>
+            <div class="form__field form__field_name">
+              <label class="form__label form__label_name form__label_patronym" for="patronym">
+                Отчество:
+              </label>
+              <input class="form__input form__input_name form__input_patronym" type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset_phone">
-          <legend class="form__legend">Тел</legend>
+        </div>
+        <div class="form__fieldset form__fieldset_phone">
+          <p class="form__legend">Тел</p>
           <div class="form__fields form__fields_phone">
-            <label class="form__label form__label_phone" for="phone">
-              Телефон:
-            </label>
-            <input class="form__input form__input_phone" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX">
+            <div class="form__field form__field_phone">
+              <label class="form__label form__label_phone" for="phone">
+                Телефон:
+              </label>
+              <input class="form__input form__input_phone" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX">
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset_email">
-          <legend class="form__legend">E-mail</legend>
+        </div>
+        <div class="form__fieldset form__fieldset_email">
+          <p class="form__legend">E-mail</p>
           <div class="form__fields form__fields_email">
-            <label class="form__label form__label_email">
-              <input class="form__input form__input_email" type="email" name="email" placeholder="Ваш E-mail">
-            </label>
+            <div class="form__field form__field_email">
+              <label class="form__label form__label_email" for="email">
+                E-mail
+              </label>
+              <input class="form__input form__input_email" type="email" name="email" id="email" placeholder="Ваш E-mail">
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset_additionally">
-          <legend class="form__legend">Доп</legend>
+        </div>
+        <div class="form__fieldset form__fieldset_additionally">
+          <p class="form__legend">Доп</p>
           <div class="form__fields form__fields_additionally">
-            <textarea class="form__input form__input_additionally" name="additionally" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form__field form__field_additionally">
+              <label class="form__label form__label_additionally" for="additionally">
+                Дополнительно
+              </label>
+              <textarea class="form__input form__input_additionally" name="additionally" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </div>
-        </fieldset>
+        </div>
         <p class="form__text form__text_finish">Все поля обязательны для заполнения</p>
         <button class="btn form__btn" type="submit">Отправить заказ</button>
       </form>
