@@ -45,7 +45,8 @@
   }
 
   @media (--tablet-widths) {
-    display: block;
+    flex-direction: row;
+
     border: none;
     margin: 0;
     padding-left: 6.5%;
@@ -77,8 +78,12 @@
   }
 
   @media (--desktop-widths) {
-    padding-left: 18.75%;
+    padding-left: 3%;
     padding-right: 18.75%;
+
+    &_color {
+      padding-right: 3%;
+    }
   }
 }
 
@@ -101,17 +106,15 @@
   }
 
   @media (--tablet-widths) {
-    display: inline-block;
-    vertical-align: top;
     width: 25%;
-    padding-top: 12px;
   }
 
   @media (--desktop-widths) {
-    width: 25%;
-    margin-left: -12.5%;
-    transform: translateX(-50%);
-    text-align: center;
+    width: 20%;
+
+    &_color {
+      width: 16.66%;
+    }
   }
 }
 
@@ -125,6 +128,10 @@
 
   font-size: 0;
 
+  &_color {
+    flex-direction: row;
+  }
+
   &_phone {
     padding-top: 10px;
   }
@@ -134,12 +141,21 @@
   }
 
   @media (--tablet-widths) {
-
+    width: 75%;
+    padding-top: 0;
   }
 
   @media (--desktop-widths) {
+    width: 80%;
 
+    &_color {
+      width: 83.34%;
+    }
   }
+}
+
+.form__legend span {
+  margin: 0 auto;
 }
 
 .form__fields_type input,
@@ -149,15 +165,39 @@
 
 .form__field {
   margin-bottom: 20px;
-  min-height: 40px;
 
   &:last-of-type {
     margin-bottom: 0;
-    min-height: 0;
+  }
+
+  &_type {
+    height: 61px;
+    margin-bottom: 0;
+
+    @media (--tablet-widths) {
+      height: 71px;
+    }
+
+    &:last-of-type {
+      height: auto;
+    }
   }
 
   &_color {
+    height: 61px;
+    margin-bottom: 0;
+
+    @media (--tablet-widths) {
+      width: 50%;
+      height: 71px;
+    }
+
+    @media (--desktop-widths) {
+      width: 33%;
+    }
+
     &:last-of-type {
+      height: auto;
       margin-bottom: 11px;
     }
   }
@@ -178,6 +218,7 @@
 
     @media (--desktop-widths) {
       padding-left: 18.75%;
+      padding-right: 18.75%;
     }
   }
 
@@ -231,6 +272,7 @@
       border: 2px solid #444444;
 
       @media (--tablet-widths) {
+        top: -16px;
         width: 50px;
         height: 50px;
       }
@@ -258,7 +300,7 @@
 
       @media (--tablet-widths) {
         left: 15px;
-        top: 15px;
+        top: 0;
 
         width: 20px;
         height: 20px;
@@ -280,6 +322,7 @@
       border: 2px solid #444444;
 
       @media (--tablet-widths) {
+        top: -16px;
         width: 50px;
         height: 50px;
       }
