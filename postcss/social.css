@@ -5,7 +5,7 @@
 
   padding: 0 30px;
   margin: 0;
-  
+
   list-style: none;
 
   @media (--tablet-widths) {
@@ -19,7 +19,29 @@
   padding: 30px 20px;
   margin-right: 40px;
 
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &_instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &_facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &_twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
   &:last-of-type {
     margin-right: 0;
   }
+}
+
+.social__link {
+  display: block;
+  height: 20px;
+
+  font-size: 0;
 }
