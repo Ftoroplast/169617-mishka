@@ -9,14 +9,11 @@
   }
 
   @media (--tablet-widths) {
-    display: flex;
+    font-size: 0;
   }
 }
 
 .banner-list__item {
-  flex-grow: 1;
-  font-size: 0;
-
   &:nth-of-type(odd) {
     background-color: #63d1bb;
 
@@ -31,6 +28,12 @@
     &:hover {
       background-color: #46c1ae;
     }
+  }
+
+  @media (--tablet-widths) {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
   }
 }
 
