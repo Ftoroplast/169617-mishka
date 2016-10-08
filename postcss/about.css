@@ -91,6 +91,7 @@
   &:nth-of-type(6)::before {
     background-image: url("../img/icon-feature-6.svg");
     background-size: 35px 35px;
+    background-position: 10px;
   }
 
   @media (--tablet-widths) {
