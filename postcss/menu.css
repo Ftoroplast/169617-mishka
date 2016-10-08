@@ -141,7 +141,7 @@
     }
 
     &:nth-of-type(2) {
-      flex-grow: 5;
+      flex-grow: 7;
       padding-left: 4.8%;
       height: 90px;
       margin-bottom: 73px;
