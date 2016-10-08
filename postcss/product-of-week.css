@@ -201,6 +201,7 @@
   @media (--desktop-widths) {
     top: 656px;
     left: 19.5%;
+    width: 25%;
     transform: none;
   }
 }
