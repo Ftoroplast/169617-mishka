@@ -47,7 +47,7 @@
     }
 
     @media (--desktop-widths) {
-      
+      height: 745px;
     }
   }
 }
