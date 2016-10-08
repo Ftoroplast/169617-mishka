@@ -127,8 +127,10 @@
   }
 
   @media (--desktop-widths) {
-    top: 370px;
-    left: 18.75%;
+    top: 367px;
+    left: 19.4%;
+
+    width: 25.5%;
   }
 }
 
@@ -139,6 +141,10 @@
 
 .product-of-week__key {
   width: 38.5%;
+
+  @media (--desktop-widths) {
+    width: 33%;
+  }
 }
 
 .product-of-week__picture {
