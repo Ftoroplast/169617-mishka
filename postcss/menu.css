@@ -238,7 +238,7 @@
 
     &_search {
       box-sizing: border-box;
-      min-width: 80px;
+      width: 82px;
       font-size: 0;
 
       &::before {
