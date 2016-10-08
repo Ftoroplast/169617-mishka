@@ -6,6 +6,7 @@
   border: 2px solid #444444;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   background-color: $default-bg-color;
 
