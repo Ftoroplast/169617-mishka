@@ -104,6 +104,7 @@
   }
 
   @media (--desktop-widths) {
+    width: 33%;
     padding-left: 6px;
     font-size: 17px;
     line-height: 30px;
