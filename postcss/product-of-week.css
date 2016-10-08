@@ -102,6 +102,11 @@
     width: 37%;
     order: 3;
   }
+
+  @media (--desktop-widths) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .product-of-week__table {
