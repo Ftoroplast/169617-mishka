@@ -45,7 +45,7 @@
 .about__item {
   position: relative;
 
-  padding-top: 80px;
+  padding-top: 100px;
 
   &::before {
     content: "";
