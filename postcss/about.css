@@ -5,6 +5,7 @@
   padding-bottom: 50px;
 
   @media (--desktop-widths) {
+    padding-top: 79px;
     padding-left: 18.75%;
   }
 }
