@@ -36,6 +36,7 @@
       order: 1;
       flex-grow: 1;
       min-width: 70%;
+      margin-bottom: 60px;
 
       font-size: 43px;
       line-height: 50px;
@@ -44,6 +45,7 @@
     @media (--desktop-widths) {
       order: 2;
       width: 100%;
+      margin-bottom: 48px;
 
       font-size: 53px;
       line-height: 57px;
@@ -61,6 +63,7 @@
       order: 2;
       box-sizing: border-box;
       padding-right: 30px;
+      margin-bottom: 60px;
       text-align: center;
       align-self: center;
     }
@@ -75,7 +78,7 @@
   }
 
   @media (--tablet-widths) {
-    margin-bottom: 60px;
+
   }
 }
 
