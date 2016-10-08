@@ -181,6 +181,8 @@
   @media (--desktop-widths) {
     top: 580px;
     left: 37.25%;
+
+    font-size: 20px;
   }
 }
 
