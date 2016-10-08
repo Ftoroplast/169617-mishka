@@ -60,7 +60,8 @@
 
   &:nth-of-type(1)::before {
     background-image: url("../img/icon-feature-1.svg");
-    background-size: 30px 40px;
+    background-size: 32px 41px;
+    background-position: 19px 13px;
   }
 
   &:nth-of-type(2)::before {
