@@ -58,7 +58,7 @@
   @mixin font 700, 27px, 30px;
 
   @media (--tablet-widths) {
-    max-width: 610px;
+    max-width: 620px;
     font-size: 43px;
     line-height: 50px;
   }
