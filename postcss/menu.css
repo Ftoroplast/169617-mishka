@@ -121,6 +121,7 @@
       justify-content: flex-end;
       margin-bottom: 73px;
       height: 90px;
+      flex-grow: 0;
 
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
@@ -130,6 +131,7 @@
       justify-content: flex-end;
       margin-bottom: 73px;
       height: 90px;
+      flex-grow: 0;
     }
   }
 
@@ -246,7 +248,7 @@
 
     &_cart {
       box-sizing: border-box;
-      min-width: 264px;
+      width: 269px;
 
       &::before {
 
