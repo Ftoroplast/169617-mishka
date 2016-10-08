@@ -80,14 +80,17 @@
   }
 
   @media (--desktop-widths) {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 8.34%;
-    padding-right: 8.34%;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
-      padding-top: 30px;
-      padding-bottom: 45px;
+      padding-top: 24px;
+      padding-bottom: 39px;
     }
   }
 }
