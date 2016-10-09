@@ -4,6 +4,10 @@
   padding-top: 30px;
   padding-bottom: 50px;
 
+  @media (--tablet-widths) {
+    padding-top: 40px;
+  }
+
   @media (--desktop-widths) {
     padding-top: 79px;
     padding-left: 19.1%;
@@ -32,11 +36,15 @@
   margin: 0;
 
   @media (--tablet-widths) {
+    margin-left: -4px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (--desktop-widths) {
+    margin-left: 0;
+    
     font-size: 53px;
     line-height: 57px;
   }
