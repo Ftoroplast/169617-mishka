@@ -82,17 +82,15 @@
 .reviews__btn {
   @media (--tablet-widths) {
     position: absolute;
-    top: 0;
+    top: 89px;
     right: 0;
 
-    width: 175px;
+    width: 171px;
   }
 
   @media (--desktop-widths) {
     top: 97px;
     right: 3px;
-
-    width: 171px;
   }
 }
 
