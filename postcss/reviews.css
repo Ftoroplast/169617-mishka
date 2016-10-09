@@ -40,7 +40,7 @@
 
   @media (--desktop-widths) {
     width: 90%;
-    
+
     font-size: 17px;
   }
 }
@@ -54,7 +54,7 @@
 }
 
 .reviews__author-name {
-  @mixin font 700, 18px, 24px;
+  @mixin font 700, 17px, 24px;
   margin: 0;
 }
 
