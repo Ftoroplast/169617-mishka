@@ -27,7 +27,6 @@
     box-sizing: border-box;
     width: 100%;
 
-    padding-right: 30px;
     margin-bottom: 50px;
   }
 
@@ -67,6 +66,13 @@
   @media (--desktop-widths) {
     width: 100%;
     text-align: center;
+  }
+}
+
+.product__picture img {
+  @media (--tablet-widths) {
+    min-width: 335px;
+    min-height: 335px;
   }
 }
 
