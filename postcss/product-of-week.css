@@ -121,10 +121,10 @@
     order: 5;
 
     position: absolute;
-    top: 245px;
+    top: 268px;
     left: 6.5%;
 
-    width: 37%;
+    width: 32%;
   }
 
   @media (--desktop-widths) {

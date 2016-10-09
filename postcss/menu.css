@@ -141,6 +141,8 @@
 
   @media (--desktop-widths) {
     &:nth-of-type(1) {
+      flex-grow: 1;
+      
       margin-bottom: 73px;
       height: 90px;
       border-right: 1px solid #ececec;
