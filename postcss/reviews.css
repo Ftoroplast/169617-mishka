@@ -60,7 +60,7 @@
 }
 
 .reviews__author-nickname {
-  @mixin font 400, 18px, 30px, #444444;
+  @mixin font 400, 17px, 30px, #444444;
 }
 
 .reviews__controls {
