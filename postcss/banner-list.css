@@ -16,28 +16,6 @@
 .banner-list__item {
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 9.375%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 65px;
-    height: 65px;
-    background-repeat: no-repeat;
-    background-size: 65px 65px;
-  }
-
-  &:nth-of-type(1)::after {
-    right: 25px;
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  &:nth-of-type(2)::after {
-    right: 35px;
-    background-image: url("../img/icon-toy.svg");
-  }
-
   &:nth-of-type(odd) {
     background-color: #63d1bb;
 
@@ -67,6 +45,18 @@
   text-decoration: none;
   @mixin font 700, 19px, 24px, #ffffff;
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 9.375%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+  }
+
   &:hover {
     padding-top: 21px;
     padding-bottom: 36px;
@@ -95,6 +85,16 @@
       padding-bottom: 39px;
     }
   }
+}
+
+.banner-list__item:nth-of-type(1) .banner-list__link::after {
+  right: 25px;
+  background-image: url("../img/icon-interior.svg");
+}
+
+.banner-list__item:nth-of-type(2) .banner-list__link::after {
+  right: 35px;
+  background-image: url("../img/icon-toy.svg");
 }
 
 .banner-list__link span {
