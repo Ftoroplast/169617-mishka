@@ -73,6 +73,10 @@
     @media (--tablet-widths) {
       display: flex;
       justify-content: space-between;
+      height: 130px;
+    }
+
+    @media (--desktop-widths) {
       height: 135px;
     }
   }
