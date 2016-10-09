@@ -44,7 +44,7 @@
 
   @media (--desktop-widths) {
     margin-left: 0;
-    
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -105,17 +105,30 @@
   @media (--tablet-widths) {
     box-sizing: border-box;
     width: 50%;
+    margin-bottom: 8px;
 
     &:nth-of-type(1) {
       order: 1;
+
+      &::before {
+        background-position: 15px 12px;
+      }
     }
 
     &:nth-of-type(2) {
       order: 3;
+
+      &::before {
+        background-position: 3px 14px;
+      }
     }
 
     &:nth-of-type(3) {
       order: 5;
+
+      &::before {
+        background-position: 11px 18px;
+      }
     }
 
     &:nth-of-type(4) {
@@ -132,8 +145,6 @@
   }
 
   @media (--desktop-widths) {
-    margin-bottom: 8px;
-
     &:nth-of-type(1) {
       width: 40%;
       padding-left: 5px;

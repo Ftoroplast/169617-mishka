@@ -1,6 +1,7 @@
 .reviews {
   @media (--tablet-widths) {
     position: relative;
+    padding-top: 87px;
   }
 
   @media (--desktop-widths) {
@@ -36,13 +37,13 @@
 
   @media (--tablet-widths) {
     margin-bottom: 50px;
+
+    font-size: 17px;
   }
 
   @media (--desktop-widths) {
     width: 90%;
     margin-bottom: 39px;
-
-    font-size: 17px;
   }
 }
 
