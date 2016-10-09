@@ -95,7 +95,7 @@
     top: 345px;
 
     display: table;
-    width: 25%;
+    width: 27%;
     font-size: 17px;
   }
 }
@@ -126,8 +126,8 @@
   vertical-align: top;
 
   @media (--desktop-widths) {
-    width: 50%;
-    padding-bottom: 30px;
+    width: 76px;
+    padding-bottom: 27px;
   }
 }
 
@@ -136,8 +136,8 @@
   overflow: hidden;
 
   @media (--desktop-widths) {
-    width: 50%;
-    padding-bottom: 30px;
+    width: auto;
+    padding-bottom: 27px;
   }
 }
 
@@ -156,6 +156,7 @@
 
 .contacts__link {
   &_email {
+    display: inline-block;
     text-decoration: none;
 
     &::after {
