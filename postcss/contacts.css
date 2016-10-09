@@ -75,6 +75,10 @@
 
 .contacts__link {
   @mixin font 400, 15px, 30px, #444444;
+
+  @media (--desktop-widths) {
+    font-size: 17px;
+  }
 }
 
 .contacts__table {
@@ -88,10 +92,11 @@
 
   @media (--desktop-widths) {
     position: absolute;
-    top: 250px;
+    top: 345px;
 
     display: table;
     width: 25%;
+    font-size: 17px;
   }
 }
 
