@@ -67,15 +67,10 @@
   }
 
   @media (--tablet-widths) {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @media (--desktop-widths) {
     padding-top: 29px;
     padding-bottom: 29px;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+    padding-left: 35px;
+    padding-right: 35px;
 
     font-size: 20px;
     line-height: 30px;
@@ -84,6 +79,11 @@
       padding-top: 24px;
       padding-bottom: 39px;
     }
+  }
+
+  @media (--desktop-widths) {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
   }
 }
 
