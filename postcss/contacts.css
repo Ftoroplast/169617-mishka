@@ -60,6 +60,16 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      top: -9px;
+      left: -107px;
+    }
+
+    &::after {
+      top: -6px;
+      left: -99px;
+    }
   }
 }
 
