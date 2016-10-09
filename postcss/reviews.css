@@ -29,6 +29,10 @@
   @media (--tablet-widths) {
     margin-bottom: 50px;
   }
+
+  @media (--desktop-widths) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-info {
