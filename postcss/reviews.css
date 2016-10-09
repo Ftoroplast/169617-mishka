@@ -72,6 +72,10 @@
     width: 25%;
     border: none;
   }
+
+  @media (--desktop-widths) {
+    width: 180px;
+  }
 }
 
 .reviews__btn {
