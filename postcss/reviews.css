@@ -2,6 +2,10 @@
   @media (--tablet-widths) {
     position: relative;
   }
+
+  @media (--desktop-widths) {
+    padding-top: 89px;
+  }
 }
 
 .reviews__title {
