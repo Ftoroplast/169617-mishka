@@ -72,7 +72,7 @@
 .page-title__additional-text {
   position: absolute;
   z-index: 1;
-  top: 20px;
+  top: 16px;
   right: 9.375%;
   display: none;
   @mixin font 400, 15px, 24px, #444444;
@@ -80,6 +80,10 @@
   @media (--tablet-widths) {
     right: 6.5%;
     display: inline;
+
+    &_no-tablet {
+      display: none;
+    }
   }
 
   @media (--desktop-widths) {
