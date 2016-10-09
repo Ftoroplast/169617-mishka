@@ -253,16 +253,13 @@
 
     &_cart {
       box-sizing: border-box;
-      width: 269px;
-
-      &::before {
-
-      }
+      width: 264px;
     }
   }
 
   @media (--desktop-widths) {
-    &:nth-of-type(4) {
+    &_cart {
+      width: 269px;
       padding-right: 5px;
     }
   }
