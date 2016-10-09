@@ -28,6 +28,7 @@
   @media (--tablet-widths) {
     position: relative;
     margin-bottom: 50px;
+    margin-left: -4px;
 
     font-size: 43px;
     line-height: 50px;
@@ -58,6 +59,7 @@
   @media (--desktop-widths) {
     order: 1;
     width: 50%;
+    margin-left: 0;
 
     font-size: 53px;
     line-height: 57px;
