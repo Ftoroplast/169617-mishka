@@ -39,6 +39,8 @@
   }
 
   @media (--desktop-widths) {
+    width: 90%;
+    
     font-size: 17px;
   }
 }
