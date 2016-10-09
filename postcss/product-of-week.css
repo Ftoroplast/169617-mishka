@@ -175,15 +175,15 @@
 
     position: absolute;
     top: 400px;
-    left: 25%;
+    left: 25.7%;
     transform: translateX(-50%);
+
+    font-size: 20px;
   }
 
   @media (--desktop-widths) {
     top: 577px;
     left: 32.4%;
-
-    font-size: 20px;
   }
 }
 
