@@ -1,5 +1,5 @@
 .map {
-  height: 460px;
+  height: 457px;
   margin: 0 -11.54%;
   margin-bottom: 40px;
 
@@ -11,7 +11,7 @@
   text-align: center;
 
   @media (--tablet-widths) {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   @media (--desktop-widths) {
