@@ -36,7 +36,7 @@
   margin-bottom: 30px;
 
   @media (--tablet-widths) {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
 
     font-size: 17px;
   }
@@ -70,12 +70,12 @@
   border: 1px solid #ececec;
 
   @media (--tablet-widths) {
-    width: 25%;
+    width: 180px;
     border: none;
   }
 
   @media (--desktop-widths) {
-    width: 180px;
+
   }
 }
 
