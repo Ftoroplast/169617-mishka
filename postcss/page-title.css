@@ -80,18 +80,22 @@
   display: none;
   @mixin font 400, 15px, 24px, #444444;
 
+  &_no-tablet {
+    display: none;
+  }
+
   @media (--tablet-widths) {
     right: 6.5%;
     display: inline;
-
-    &_no-tablet {
-      display: none;
-    }
   }
 
   @media (--desktop-widths) {
     top: 18px;
     right: 4.4%;
+
+    &_no-tablet {
+      display: inline;
+    }
   }
 }
 

@@ -7,6 +7,7 @@
   @media (--tablet-widths) {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
   }
 
   @media (--desktop-widths) {
@@ -39,15 +40,25 @@
 
     background-repeat: no-repeat;
     background-image: url("../img/icon-video.svg");
-    background-size: 33px 23px;
+    background-size: 100% 100%;
   }
 
   @media (--tablet-widths) {
     order: 2;
     border-bottom: none;
+
     padding-bottom: 0;
+    padding-top: 37px;
+    padding-left: 105px;
 
     font-size: 20px;
+
+    &::before {
+      left: 8.6%;
+      top: 48px;
+      width: 36px;
+      height: 32px;
+    }
   }
 
   @media (--desktop-widths) {
@@ -72,6 +83,12 @@
 
 .production-process__video img:nth-child(1) {
   width: 100%;
+
+  @media (--tablet-widths) {
+    min-width: 668px;
+    min-height: 455px;
+  }
+
   @media (--desktop-widths) {
     height: 460px;
   }
@@ -101,6 +118,9 @@
     order: 3;
     border-top: none;
     padding-bottom: 45px;
+    padding-top: 32px;
+    padding-left: 39px;
+    padding-right: 41px;
   }
 
   @media (--desktop-widths) {
@@ -148,7 +168,10 @@
   margin-bottom: 20px;
 
   @media (--tablet-widths) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   @media (--desktop-widths) {

@@ -12,6 +12,7 @@
   @media (--tablet-widths) {
     flex-basis: 185px;
     padding-right: 0;
+    padding-top: 37px;
 
     border-top: none;
   }
