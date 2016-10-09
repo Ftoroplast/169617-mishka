@@ -192,11 +192,12 @@
     order: 7;
 
     position: absolute;
-    top: 470px;
-    left: 25%;
+    top: 503px;
+    left: 25.3%;
     transform: translateX(-50%);
 
-    width: 37%;
+    width: 36.5%;
+    padding-left: 8px;
   }
 
   @media (--desktop-widths) {
