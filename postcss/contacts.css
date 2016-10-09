@@ -183,8 +183,6 @@
       opacity: 0.3;
 
       &::after {
-        opacity: 0.3;
-
         transform: translateX(-25px);
       }
     }
