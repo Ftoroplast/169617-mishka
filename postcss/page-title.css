@@ -67,6 +67,8 @@
   }
 
   @media (--desktop-widths) {
+    padding: 0;
+    margin-bottom: 14px;
     font-size: 53px;
     line-height: 57px;
   }
