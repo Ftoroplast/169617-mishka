@@ -150,7 +150,9 @@
 
   @media (--desktop-widths) {
     position: absolute;
-    top: 480px;
+    top: 578px;
+    margin-left: 5px;
+    width: 226px;
   }
 }
 
