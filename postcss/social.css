@@ -19,7 +19,6 @@
   width: 20px;
   height: 20px;
   padding: 30px 20px;
-  margin-right: 40px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -43,6 +42,7 @@
   @media (--tablet-widths) {
     height: 30px;
     padding: 0;
+    margin-right: 40px;
   }
 }
 

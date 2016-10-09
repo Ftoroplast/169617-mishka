@@ -19,12 +19,28 @@
 
 .production-process__title {
   @mixin font 700, 17px, 24px;
+  position: relative;
   box-sizing: border-box;
   padding: 25px;
   padding-left: 90px;
   padding-right: 30px;
   margin: 0;
   border: 1px solid #ececec;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 33px;
+    height: 23px;
+
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-video.svg");
+    background-size: 33px 23px;
+  }
 
   @media (--tablet-widths) {
     order: 2;
