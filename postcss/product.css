@@ -68,6 +68,10 @@
   width: 100%;
 
   @media (--tablet-widths) {
+    height: 334px;
+  }
+
+  @media (--desktop-widths) {
     height: 462px;
   }
 }
