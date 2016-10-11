@@ -88,7 +88,7 @@
 }
 
 .banner-list__item:nth-of-type(1) .banner-list__link::after {
-  right: 25px;
+  right: 36px;
   background-image: url("../img/icon-interior.svg");
 }
 
