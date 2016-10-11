@@ -9,6 +9,7 @@
 
   @media (--tablet-widths) {
     padding-top: 71px;
+    padding-bottom: 50px;
   }
 
   @media (--desktop-widths) {
@@ -32,16 +33,8 @@
 
   font-size: 0;
 
-  &:last-of-type {
+  &_additionally {
     padding-bottom: 15px;
-
-    @media (--tablet-widths) {
-      padding-bottom: 50px;
-    }
-
-    @media (--desktop-widths) {
-      padding-bottom: 90px;
-    }
   }
 
   @media (--tablet-widths) {
@@ -52,7 +45,7 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
     padding-top: 73px;
-    padding-bottom: 60px;
+    padding-bottom: 49px;
 
     font-size: 0;
 
@@ -68,12 +61,33 @@
       background-color: #f1f1f1;
     }
 
+    &_type {
+      padding-top: 75px;
+      padding-bottom: 47px;
+    }
+
+    &_color {
+      padding-top: 77px;
+      padding-bottom: 21px;
+    }
+
+    &_name {
+      padding-top: 55px;
+      padding-bottom: 65px;
+    }
+
     &_phone {
-      padding-bottom: 10px;
+      padding-top: 60px;
+      padding-bottom: 16px;
     }
 
     &_email {
-      padding-top: 10px;
+      padding-top: 15px;
+    }
+
+    &_additionally {
+      padding-top: 65px;
+      padding-bottom: 52px;
     }
   }
 
@@ -83,6 +97,10 @@
 
     &_color {
       padding-right: 3%;
+    }
+
+    &_additionally {
+      padding-bottom: 90px;
     }
   }
 }
@@ -113,10 +131,6 @@
     }
 
     &_phone {
-      padding-top: 11px;
-    }
-
-    &_email {
       padding-top: 11px;
     }
 
@@ -209,7 +223,12 @@
 
     @media (--tablet-widths) {
       width: 50%;
-      height: 71px;
+      height: 76px;
+
+      &:nth-of-type(2n) {
+        box-sizing: border-box;
+        padding-left: 11px;
+      }
     }
 
     @media (--desktop-widths) {
@@ -225,6 +244,12 @@
     &:last-of-type {
       height: auto;
       margin-bottom: 11px;
+    }
+  }
+
+  &_name {
+    @media (--tablet-widths) {
+      margin-bottom: 25px;
     }
   }
 }
@@ -258,6 +283,9 @@
       order: 2;
       align-self: center;
       margin-bottom: 0;
+
+      font-size: 17px;
+      line-height: 30px;
     }
 
     @media (--desktop-widths) {
@@ -352,8 +380,8 @@
 
       @media (--tablet-widths) {
         top: -16px;
-        width: 50px;
-        height: 50px;
+        width: 54px;
+        height: 52px;
       }
     }
 
@@ -365,20 +393,12 @@
       border-color: rgba(68, 68, 68, 0.3);
     }
 
-    &::after {
-      content: "";
-      display: none;
-
-      background-image: url("http://placehold.it/16x16");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
     @media (--tablet-widths) {
       display: inline-block;
       vertical-align: middle;
       width: 50%;
       margin-bottom: 25px;
+      padding-left: 80px;
     }
 
     @media (--desktop-widths) {
@@ -457,7 +477,7 @@
 #black:checked ~ label[for="black"]::before,
 #pink:checked ~ label[for="pink"]::before,
 #orange:checked ~ label[for="orange"]::before {
-  background-image: url("http://placehold.it/16x16");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -550,14 +570,16 @@
   &_phone {
     @media (--tablet-widths) {
       position: relative;
-      top: -10px;
+      top: -11px;
+      height: 55px;
     }
   }
 
   &_email {
     @media (--tablet-widths) {
       position: relative;
-      top: -10px;
+      top: -17px;
+      height: 52px;
     }
   }
 }
@@ -574,6 +596,7 @@
     order: 1;
     align-self: center;
 
+    min-width: 230px;
     margin-left: 6.5%;
   }
 
@@ -584,16 +607,39 @@
 
 ::-webkit-input-placeholder {
   opacity: 0.3;
+  padding-left: 20px;
 }
 
 ::-moz-placeholder {
   opacity: 0.3;
+  padding-left: 20px;
 }
 
 :-moz-placeholder {
   opacity: 0.3;
+  padding-left: 20px;
 }
 
 :-ms-input-placeholder {
   opacity: 0.3;
+  padding-left: 20px;
+}
+
+.form__input_additionally::-webkit-input-placeholder {
+  padding-left: 0;
+}
+
+.form__input_additionally::-moz-placeholder {
+  opacity: 0.3;
+  padding-left: 20px;
+}
+
+.form__input_additionally:-moz-placeholder {
+  opacity: 0.3;
+  padding-left: 20px;
+}
+
+.form__input_additionally:-ms-input-placeholder {
+  opacity: 0.3;
+  padding-left: 20px;
 }

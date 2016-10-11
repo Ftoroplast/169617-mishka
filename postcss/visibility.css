@@ -1,0 +1,16 @@
+.visibility__mobile {
+  @media (--tablet-widths) {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.visibility__tablet {
+  position: absolute;
+  opacity: 0;
+
+  @media (--tablet-widths) {
+    position: static;
+    opacity: 1;
+  }
+}
